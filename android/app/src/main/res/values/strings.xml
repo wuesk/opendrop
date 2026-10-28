@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Open Drop</string>
+    <string name="headline">Share files nearby</string>
+    <string name="subtitle">Send files to your devices over the same Wi-Fi.</string>
+    <string name="this_device">THIS DEVICE</string>
+    <string name="starting_identity">Starting local discovery…</string>
+    <string name="nearby_devices">Nearby devices</string>
+    <string name="selection_hint">Tap a device to choose files, or share files to Open Drop from another app.</string>
+    <string name="choose_files">Choose files</string>
+    <string name="connect_address">Connect by address</string>
+    <string name="starting_service">Starting Open Drop…</string>
+    <string name="starting_status">Starting background discovery…</string>
+    <string name="download_location">Received files save to Downloads / Open Drop</string>
+    <string name="address_label">IPv4 address and optional port</string>
+    <string name="address_help">Find this address in Open Drop on the receiving device.</string>
+    <string name="invalid_address">Enter a valid IPv4 address and port (1–65535).</string>
+</resources>

@@ -1,0 +1,46 @@
+# Local agent metadata and configuration
+.agents/
+.codex/
+.aws/
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Toolchains, installed copies, downloads, and release artifacts
+.tools/
+.local/
+downloads/
+dist/
+
+# Desktop and cross-compilation output
+build/
+build-windows/
+build-windows-cross/
+CMakeUserPresets.json
+
+# Android build output and machine-specific configuration
+android/.gradle/
+android/local.properties
+android/**/build/
+android/.kotlin/
+.idea/
+*.iml
+
+# Signing material and private keys
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Generated files, logs, and caches
+*.part
+*.log
+*.apk
+*.aab
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db

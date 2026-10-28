@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Open Drop
+Comment=Drop files onto nearby phones and computers
+Exec=opendrop
+Icon=opendrop
+Terminal=false
+Categories=Network;FileTransfer;
+StartupNotify=true

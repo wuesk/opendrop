@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="drop_primary">#006B5B</color>
+    <color name="drop_on_primary">#FFFFFF</color>
+    <color name="drop_primary_container">#9EF2D9</color>
+    <color name="drop_on_primary_container">#002019</color>
+    <color name="drop_secondary">#4B635B</color>
+    <color name="drop_secondary_container">#CEE9DD</color>
+    <color name="drop_on_secondary_container">#072018</color>
+    <color name="drop_surface">#F5FBF6</color>
+    <color name="drop_on_surface">#171D1A</color>
+    <color name="drop_on_surface_variant">#3F4944</color>
+    <color name="drop_surface_container">#E9EFEB</color>
+    <color name="drop_outline">#6F7973</color>
+</resources>

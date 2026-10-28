@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+opendrop_root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
+if [[ ! -x "$opendrop_root/build/opendrop" ]]; then
+    "$opendrop_root/scripts/build-desktop.sh"
+fi
+exec "$opendrop_root/build/opendrop" "$@"

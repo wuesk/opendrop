@@ -1,0 +1,32 @@
+name: Windows build
+on:
+  workflow_dispatch:
+  push:
+    paths: ['desktop/**', 'tests/**', 'CMakeLists.txt', 'scripts/build-windows.ps1', 'docs/windows-readme.txt', 'docs/licenses/**', '.github/workflows/windows.yml']
+  pull_request:
+    paths: ['desktop/**', 'tests/**', 'CMakeLists.txt', 'scripts/build-windows.ps1', 'docs/windows-readme.txt', 'docs/licenses/**', '.github/workflows/windows.yml']
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-2022
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.8.3'
+          arch: win64_mingw
+          tools: 'tools_mingw1310'
+          add-tools-to-path: true
+          cache: true
+      - name: Build, test and package
+        shell: pwsh
+        run: ./scripts/build-windows.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: open-drop-windows-x64
+          path: dist/open-drop-windows-x64.zip
+          if-no-files-found: error

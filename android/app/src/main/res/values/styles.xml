@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="colorPrimary">@color/drop_primary</item>
+        <item name="colorOnPrimary">@color/drop_on_primary</item>
+        <item name="colorPrimaryContainer">@color/drop_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/drop_on_primary_container</item>
+        <item name="colorSecondary">@color/drop_secondary</item>
+        <item name="colorOnSecondary">@color/drop_on_primary</item>
+        <item name="colorSecondaryContainer">@color/drop_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/drop_on_secondary_container</item>
+        <item name="colorSurface">@color/drop_surface</item>
+        <item name="colorOnSurface">@color/drop_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/drop_on_surface_variant</item>
+        <item name="colorSurfaceContainer">@color/drop_surface_container</item>
+        <item name="colorOutline">@color/drop_outline</item>
+        <item name="android:colorBackground">@color/drop_surface</item>
+        <item name="android:windowBackground">?attr/colorSurface</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>
